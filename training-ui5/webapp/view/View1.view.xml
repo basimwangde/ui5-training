@@ -1,0 +1,15 @@
+<mvc:View controllerName="trainingui5.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <FeedInput id="inputId"
+		post="onPress"
+		showIcon="true" />
+        <Button text="Default" id="buttonId"
+                type="Critical"
+						press="onPress"
+						ariaDescribedBy="defaultButtonDescription genericButtonDescription">
+				</Button>
+        
+    </Page>
+</mvc:View>
