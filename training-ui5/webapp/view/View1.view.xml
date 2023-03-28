@@ -10,6 +10,53 @@
 						press="onPress"
 						ariaDescribedBy="defaultButtonDescription genericButtonDescription">
 				</Button>
+        <Panel id="_IDGenPanel1"
+            headerText="User Table"
+        >
+            <content>
+                <Table id="_IDGenTable1" items="{
+                    path: '/results'}" >
+                    <items>
+                        <ColumnListItem id="_IDGenColumnListItem1" type="Navigation" press="onLineItemPress">  
+                            <cells>
+                                <Text id="_IDGenText5" text="{username}" > </Text>
+                                <Text id="_IDGenText6" text="{firstName}" > </Text>
+                                <Text id="_IDGenText7" text="{lastName}" > </Text>
+                                <Text id="_IDGenText8" text="{gender}" > </Text>
+                                <Text id="_IDGenText10" text="{=${active} === 'X' ? 'Yes': 'No'}" > </Text>
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+                    <columns>
+                        <Column id="_IDGenColumn1">
+                            <header>
+                                <Text id="_IDGenText1" text="Username"></Text>
+                            </header>
+                        </Column>
+                        <Column id="_IDGenColumn2">
+                            <header>
+                                <Text id="_IDGenText2" text="First Name"></Text>
+                            </header>
+                        </Column>
+                        <Column id="_IDGenColumn3">
+                            <header>
+                                <Text id="_IDGenText3" text="Last Name"></Text>
+                            </header>
+                        </Column>
+                        <Column id="_IDGenColumn4">
+                            <header>
+                                <Text id="_IDGenText4" text="Gender"></Text>
+                            </header>
+                        </Column>
+                        <Column id="_IDGenColumn5">
+                            <header>
+                                <Text id="_IDGenText9"  text="Active"></Text>
+                            </header>
+                        </Column>
+                    </columns>
+                </Table>     
+            </content>
+        </Panel>
         
     </Page>
 </mvc:View>
